@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Adivina el Numero del 1 al 10">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdininaElNumero</title>
+</head>
+
+
+<body>
+    <h1>Adivina El Numero</h1>
+
+    <input tipe="text" id="dato">
+    <button id="boton">Enter</button>
+
+
+    <script>
+
+        alert ("adivina el numeroAdivina El Numero de 0 a 10. kiketion")
+
+        var numero = Math.ceil ( Math.random() * 10 );
+        
+        document.getElementById("boton").addEventListener ("click", function(){
+            var entrada = document.getElementById("dato").value;
+
+            if (entrada == numero){
+                alert("BUENA ESA! GANASTE!!");
+                location.reload();
+            }
+            else {
+                alert("PERDISTE! LOSER! JAJAJA")
+                location.reload();
+            }
+        })
+    </script>
+</body>
+</html>
